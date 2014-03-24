@@ -7,7 +7,11 @@ namespace AngularMvcDemo
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
-                        "~/Scripts/angular.min.js"));
+                        "~/Scripts/Libraries/angular.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                        "~/Scripts/App/HobbitModule.js",
+                        "~/Scripts/App/Controllers/DwarvesController.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

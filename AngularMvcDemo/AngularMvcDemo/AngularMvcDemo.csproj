@@ -134,7 +134,9 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\App\Controllers\DwarvesController.js" />
+    <Content Include="Scripts\App\HobbitModule.js" />
+    <Content Include="Scripts\Libraries\angular.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

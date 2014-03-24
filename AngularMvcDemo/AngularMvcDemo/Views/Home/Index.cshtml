@@ -2,4 +2,11 @@
     ViewBag.Title = "Home Page";
 }
 
-<h1>The Dwarves</h1>
+<div ng-controller="CompanionshipController">
+    <h1>The Dwarves in <strong>The Hobbit</strong></h1>
+
+    <h2>The {{companions.dwarves.length}} Dwarves</h2>
+    <ul>
+        <li ng-repeat="dwarf in companions.dwarves">{{dwarf}}</li>
+    </ul>
+</div>

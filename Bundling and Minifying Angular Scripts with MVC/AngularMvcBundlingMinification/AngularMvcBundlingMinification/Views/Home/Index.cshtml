@@ -1,7 +1,25 @@
 ﻿@{
-    ViewBag.Title = "Bundling and Minifying Angular Applications with ASP.NET MVC";
+    ViewBag.Title = "The Lord of the Rings";
 }
 
 <h1>@ViewBag.Title</h1>
 
-<p>Check out this page's source code!</p>
+<h2>The Fellowship of the Ring</h2>
+<div ng-controller="FellowshipController">
+    <ul>
+        <li ng-repeat="companion in fellowship.companions">
+            <a wikipedia-link="companion">{{companion}}</a>
+        </li>
+    </ul>
+</div>
+
+<h2>The Three Elven Rings</h2>
+<div ng-controller="ElvenRingsController">
+    <ul>
+        <li ng-repeat="ring in rings.elvenRings">
+            <a wikipedia-link="ring">{{ring}}</a>
+        </li>
+    </ul>
+</div>
+
+<em>Check out this page's source code to see the script bundle in action.</em>

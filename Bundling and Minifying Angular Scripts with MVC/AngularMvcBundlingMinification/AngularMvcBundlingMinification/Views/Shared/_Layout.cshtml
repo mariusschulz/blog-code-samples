@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html ng-app="lordOfTheRings">
+<head>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @RenderBody()
+
+    <!-- Vendor scripts -->
+    <script src="~/Client/scripts/vendor/angular.min.js"></script>
+
+    <!-- Angular application scripts -->
+    @Scripts.Render("~/Client/scripts/app/main.js")
+</body>
+</html>

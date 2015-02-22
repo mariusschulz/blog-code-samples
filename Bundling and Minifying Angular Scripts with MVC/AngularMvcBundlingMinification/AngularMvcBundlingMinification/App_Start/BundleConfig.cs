@@ -2,7 +2,7 @@
 
 namespace AngularMvcBundlingMinification
 {
-    public class BundleConfig
+    public static class BundleConfig
     {
         public static void RegisterScriptBundles(BundleCollection bundles)
         {

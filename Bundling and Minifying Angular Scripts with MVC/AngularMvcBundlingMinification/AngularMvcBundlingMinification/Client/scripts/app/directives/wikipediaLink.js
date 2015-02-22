@@ -3,9 +3,9 @@
 
     angular
         .module("lordOfTheRings")
-        .directive("wikipediaLink", WikipediaLink);
+        .directive("wikipediaLink", wikipediaLink);
 
-    function WikipediaLink() {
+    function wikipediaLink() {
         return {
             scope: {
                 articleName: "=wikipediaLink"

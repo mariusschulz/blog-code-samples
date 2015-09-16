@@ -1,0 +1,8 @@
+﻿@model IEnumerable<string>
+
+@foreach (string templateName in Model)
+{
+    <script type="text/ng-template" id="templates/@templateName">
+        @Html.Partial("~/Views/AngularTemplates/Templates/" + templateName + ".cshtml")
+    </script>
+}
